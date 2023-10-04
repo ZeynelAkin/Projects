@@ -1,0 +1,6 @@
+{
+    "diffEditor.wordWrap": "on",
+    "editor.wordWrap": "on",
+    "workbench.editor.wrapTabs": true,
+    "workbench.settings.openDefaultKeybindings": true
+}
