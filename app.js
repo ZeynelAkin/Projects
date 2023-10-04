@@ -1,25 +1,8 @@
-var http= require ("http");
+const http = require("http");
+const routes =require("./routes");// defined route file
 
 
-var server= http.createServer((request,response)=>
-{
-    //console.log(request.url,request.method);
-    //console.log(response.stat);
-    //response.setHeader("Content-Type","Text/html");
-    //response.statusCode=200;
-    //response.statusMessage="OKK";
-    //response.write("<h1>Mother Page</h1>");
-    //response.write("<p>products</p>");
-    if(request.url=='/'){
-        response.writeHead(200,{"Content-Type":"Text/html"});
-        
-        response.write('<html>
-        <head><title>Mother Page</title></head><body> <h1> Mother Pagee</h1></body></html>
-        '
-        );
-             response.end();
-    }
-    });
+var server = http.createServer(routes);
 
 server.listen(3000);
 
